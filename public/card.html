@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card-swiper</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<style>
+    html,body{
+        position:relative;
+        height: 100%;
+
+    }
+    body {
+        background: #fff;
+        font-family: cursive;
+        font-size: 3em;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .swiper {
+        width: 240px;
+        height: 380px;
+
+    }
+    .swiper-slide{
+        display: flex;
+        justify-content: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .swiper-slide:nth-child(8){
+        background-color: #000;
+        align-items: center;
+        font-size: 1em;
+    }
+</style>
+</head>
+<body>
+    <div class="swiper myswiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/full-shot-man-looking-waterfall.jpg" alt="Card" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/full-shot-people-beach.jpg" alt="Card" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/delicious-asian-noodles-concept.jpg" alt="Card" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/delicious-fried-chicken-plate.jpg" alt="Card" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/still-life-delicious-panettone-composition.jpg" alt="Card" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/still-life-delicious-panettone-arrangement.jpg" alt="Card" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/top-view-hotpot-dishes.jpg" alt="Card" />
+            </div>
+            <div class="swiper-slide"> END </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".myswiper", {
+            effect: "cards",
+            grabCursor: true,
+        });
+    </script>
+</body>
+</html>
