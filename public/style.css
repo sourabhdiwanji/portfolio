@@ -409,10 +409,10 @@ span{
 
     }
     .about{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .about-img{
-        width: 60vh;
+        width: 20vh;
         margin-top: 4rem;
     }
     .skill h2{
