@@ -338,6 +338,10 @@ span{
     color: var(--second-bg-color);
     
 }
+.contact {
+    font-size: 32px;
+    
+}
 
 /* responsive css */
 
@@ -346,7 +350,6 @@ span{
         font-size: 50%;
     }
 }
-
 @media(max-width:991px){
     .header{
         padding: 2rem 3%;
@@ -404,7 +407,7 @@ span{
 
     }
     .home-img img{
-        width: 60vh;
+        
         margin-top: 4rem;
 
     }
@@ -412,7 +415,7 @@ span{
         flex-direction: column-reverse;
     }
     .about-img{
-        width: 70vh;
+        
         margin-top: 4rem;
     }
     .skill h2{
@@ -433,8 +436,15 @@ span{
 
 @media(max-width: 617px){
     .portfolio-container{
+        
         grid-template-columns: 1fr;
     }
+    .tech-skills,.other-skills{
+        grid-template-columns: repeat(2,1fr);}
+        .contact {
+            font-size: 18px;
+            
+        }
 
 }
 
@@ -460,8 +470,4 @@ span{
         text-align: center;
         margin-top: 2rem;
     }
-}
-.contact {
-    font-size: 32px;
-    
 }
